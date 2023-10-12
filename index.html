@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Money game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img class="logo__img" src="./assets/img/dollar-logo.gif" alt="logo">
+                    </div>
+                    <h1 class="title">Money game</h1>
+                    <div class="clean-scores">
+                        <button class="clean-scores__btn">clean the results board</button>
+                    </div>
+                    <div class="logo logo-left">
+                        <img class="logo__img" src="./assets/img/dollar-logo.gif" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="game">
+                <div class="container">
+                    <div class="game__inner">
+                        <div class="info">
+                            <div class="info__item">
+                                <h3 class="info__title">play the game</h3>
+                                <ul class="difficult">
+                                    <li class="difficult__item">
+                                        <buttton class="difficult__btn" id="easy-btn">easy</buttton>
+                                    </li>
+                                    <li class="difficult__item">
+                                        <buttton class="difficult__btn" id="medium-btn">medium</buttton>
+                                    </li>
+                                    <li class="difficult__item">
+                                        <buttton class="difficult__btn" id="hard-btn">hard</buttton>
+                                    </li>
+                                </ul>
+                                <button class="info__play play">play</button>
+                            </div>
+                            <div class="info__item center">
+                                <h3 class="info__title">Your salary</h3>
+                                <div class="info__score" id="score">0</div>
+                            </div>
+                            <div class="info__item info__item-large">
+                                <h3 class="info__title">last score</h3>
+                                <ul class="scores">
+                                    <div class="scores__list">
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                    </div>
+                                    <div class="scores__list">
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                        <li class="scores__item"></li>
+                                    </div>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="game__area" id="board">
+                            <img class="game__area-preview" src="./assets/img/poor-man.png" alt="poor-man">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__link" target="_blank" href="https://github.com/Myacorkol/">
+                        <img src="./assets/img/git-icon.png" alt="git">
+                    </a>
+                    <span class="footer__date">2023</span>
+                    <a class="footer__link" target="_blank"  href="https://rs.school/js/">
+                        <img class="footer__img" src="./assets/img/rs-logo.png" alt="RS school">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="winner__modal fade-block close" id="modal">
+            <div class="modal__wrapper">
+                <h4 class="modal__title">Game over</h4>
+                <img class="modal__img" src="./assets/img/winner-modal.png" alt="winner">
+                <div class="modal__info">
+                    <p class="modal__score">your salary: 300$ </p>
+                    <button class="modal__close">Play again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
